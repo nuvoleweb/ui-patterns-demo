@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function demo_module_install() {
+  \Drupal::service('theme_handler')->install([
+    'bootstrap',
+    'demo_theme',
+  ]);
+  \Drupal::configFactory()->getEditable('system.theme')->set('default', 'demo_theme')->save();
+}

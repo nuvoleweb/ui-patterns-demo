@@ -1,0 +1,14 @@
+.github-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.toolbar-fixed .github-ribbon {
+  top: 20px;
+}
+
+.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .github-ribbon {
+  top: 60px;
+}

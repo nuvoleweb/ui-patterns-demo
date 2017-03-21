@@ -1,0 +1,10 @@
+name: UI Patterns demo theme
+type: theme
+base theme: bootstrap
+description: UI Patterns demo theme based on Bootstrap.
+package: Core
+version: VERSION
+core: 8.x
+libraries:
+  - demo_theme/style
+  - demo_theme/patterns-overview

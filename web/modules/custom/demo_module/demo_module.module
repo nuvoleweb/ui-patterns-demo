@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains demo_module.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function demo_module_test_theme() {
+  return [
+    'patterns_test_page' => [
+      'variables' => ['patterns' => NULL],
+    ],
+  ];
+}

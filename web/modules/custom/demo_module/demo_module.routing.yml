@@ -1,0 +1,7 @@
+demo_module.test_controller_test:
+  path: '/demo'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\TestController::test'
+    _title: 'UI Patterns demo'
+  requirements:
+    _permission: 'access content'
