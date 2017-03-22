@@ -1,0 +1,19 @@
+uuid: 581978e8-232c-4ff7-990f-8d14d9c3c39d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: spgRji5SliWhAxtFxriV9DhuRFewTwO278bQSr9_maY
+name: Organisation
+type: organisation
+description: 'Organisation content type.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

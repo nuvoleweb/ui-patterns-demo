@@ -10,4 +10,6 @@ clone the project and run:
 
 ```
 composer install
+cd web
+drush si config_installer -y --db-url=mysql://user:pass@localhost/db config_installer_sync_configure_form.sync_directory=../config/sync
 ```

@@ -1,0 +1,21 @@
+uuid: 60d6b3fe-8a4c-4200-9783-a7208fb6b616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.jumbotron
+_core:
+  default_config_hash: CqtXiNRv38K-9A6-9GAN5faPf1gi86-8nU9gjxGqgQs
+id: paragraph.jumbotron.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: jumbotron
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

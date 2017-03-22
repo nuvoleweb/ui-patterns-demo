@@ -1,0 +1,32 @@
+uuid: 8b4baebc-b162-4cf3-8c8d-d8d540c188e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_link
+    - field.field.node.organisation.field_logo
+    - node.type.organisation
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: hCom0QYn5DsmodRVMZEcS--2Kdrx-2EmUaXAiPftGLA
+id: node.organisation.teaser
+targetEntityType: node
+bundle: organisation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_link: true
+  field_logo: true

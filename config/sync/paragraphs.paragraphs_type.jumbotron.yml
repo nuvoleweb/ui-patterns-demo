@@ -1,0 +1,9 @@
+uuid: 5547689d-1c01-47b1-83df-4c80c387dccd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: h8tayqpeiZsF8wXLGYaB77RHrF90yn5QtUIvIkWiuYA
+id: jumbotron
+label: Jumbotron
+behavior_plugins: {  }
