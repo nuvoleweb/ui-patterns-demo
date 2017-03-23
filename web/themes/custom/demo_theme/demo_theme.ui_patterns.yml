@@ -75,3 +75,46 @@ jumbotron:
       label: URL
       description: Jumbotron link URL.
       preview: http://example.com
+
+metadata:
+  label: Metadata
+  description: Display a content metadata consisting of categories, publication date and author.
+  template: metadata
+  fields:
+    author:
+      type: text
+      label: Author
+      description: Author of the content item.
+      preview: John Smith
+    date:
+      type: text
+      label: Publication date
+      description: The date the content item was published.
+      preview: 6th of January 2017
+    categories:
+      type: text
+      label: Categories
+      description: Categories the content item is tagged with.
+      preview: Travels, North America, Hikes
+
+carousel:
+  label: Carousel
+  description: A slideshow component for cycling through elements, like a carousel.
+  fields:
+    slides:
+      type: collection
+      label: Slides
+      description: Each slide is a collection of title, subtitle and slide image.
+      preview:
+        -
+          title: Vestibulum rutrum mi nec
+          subtitle: In ac felis quis tortor malesuada pretium. Aenean commodo ligula eget dolor.
+          image: http://lorempixel.com/900/500/sports/1
+        -
+          title: Donec orci lectus
+          subtitle: Integer tincidunt. Ut a nisl id ante tempus hendrerit.
+          image: http://lorempixel.com/900/500/sports/2
+        -
+          title: Quisque ut nisi
+          subtitle: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+          image: http://lorempixel.com/900/500/sports/6
