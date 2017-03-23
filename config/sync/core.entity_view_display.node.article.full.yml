@@ -75,12 +75,31 @@ third_party_settings:
         - node_changed_date
       parent_name: ''
       weight: 0
-      format_type: fieldset
+      format_type: pattern_formatter
       format_settings:
         label: Metadata
-        description: ''
-        id: ''
-        classes: ''
+        pattern: metadata
+        pattern_mapping:
+          'fields:field_tags':
+            destination: categories
+            weight: 0
+            plugin: fields
+            source: field_tags
+          'ds_field:node_changed_date':
+            destination: date
+            weight: 1
+            plugin: ds_field
+            source: node_changed_date
+          'ds_field:node_author':
+            destination: author
+            weight: 2
+            plugin: ds_field
+            source: node_author
+          'ds_field:node_post_date':
+            destination: date
+            weight: 3
+            plugin: ds_field
+            source: node_post_date
       label: Metadata
 _core:
   default_config_hash: eKmmn3PhUWWSnHu3ergzSYPVLqhn-0Gj5pxAONSjBek
@@ -131,11 +150,20 @@ content:
       ds:
         ds_limit: ''
         ft:
-          id: default
+          id: pattern
           settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+            pattern: button
+            pattern_mapping:
+              'ds_field_template:field_links__uri':
+                destination: url
+                weight: 0
+                plugin: ds_field_template
+                source: field_links__uri
+              'ds_field_template:field_links__title':
+                destination: title
+                weight: 1
+                plugin: ds_field_template
+                source: field_links__title
   field_paragraphs:
     type: entity_reference_revisions_entity_view
     weight: 3

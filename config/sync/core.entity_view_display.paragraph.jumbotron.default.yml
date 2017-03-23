@@ -11,23 +11,18 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      path: modules/contrib/ds
+      id: pattern_jumbotron
+      path: ''
       library: ''
       disable_css: false
       entity_classes: all_classes
       settings:
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
+        pattern:
+          field_templates: default
     regions:
-      ds_content:
+      title:
         - field_title
+      subtitle:
         - field_subtitle
 _core:
   default_config_hash: Q0AC6_mTo1_N7MD1CdUGQP_88wdNQIBReBR3HuZIosE
@@ -38,13 +33,13 @@ mode: default
 content:
   field_subtitle:
     weight: 1
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
