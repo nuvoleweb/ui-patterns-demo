@@ -1,19 +1,17 @@
-uuid: 13f51eaa-044f-4ea7-9a1a-b3c9ade52f02
+uuid: ae108e9f-f736-40b7-b850-0af7357eb6f0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_logo
-    - node.type.organisation
+    - field.storage.node.field_pictures
+    - node.type.article
   module:
     - image
-_core:
-  default_config_hash: 6fwTFR05ErzBx_E0ycDZL__CnbfYxSn_2JCVf8qvP34
-id: node.organisation.field_logo
-field_name: field_logo
+id: node.article.field_pictures
+field_name: field_pictures
 entity_type: node
-bundle: organisation
-label: Logo
+bundle: article
+label: Pictures
 description: ''
 required: false
 translatable: false
@@ -25,8 +23,8 @@ settings:
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: true
-  alt_field_required: true
+  alt_field: false
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

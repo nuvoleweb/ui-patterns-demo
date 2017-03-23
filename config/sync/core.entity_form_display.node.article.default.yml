@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_links
     - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_pictures
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -68,6 +69,13 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_pictures:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 2
