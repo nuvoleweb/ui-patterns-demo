@@ -6,4 +6,6 @@ _core:
   default_config_hash: h8tayqpeiZsF8wXLGYaB77RHrF90yn5QtUIvIkWiuYA
 id: jumbotron
 label: Jumbotron
+icon_uuid: null
+description: null
 behavior_plugins: {  }

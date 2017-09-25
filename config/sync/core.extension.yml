@@ -29,7 +29,7 @@ module:
   help: 0
   history: 0
   image: 0
-  layout_plugin: 0
+  layout_discovery: 0
   link: 0
   menu_ui: 0
   node: 0
@@ -55,6 +55,7 @@ module:
   ui_patterns_ds: 0
   ui_patterns_field_group: 0
   ui_patterns_layouts: 0
+  ui_patterns_library: 0
   ui_patterns_views: 0
   update: 0
   user: 0
@@ -71,3 +72,4 @@ theme:
   demo_theme: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+profile: standard
